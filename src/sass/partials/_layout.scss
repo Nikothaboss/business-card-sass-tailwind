@@ -1,0 +1,8 @@
+@use "./mixins";
+@use "./tailwind";
+
+.wrapper{
+    @include mixins.flex(center, center);
+
+    @apply h-screen bg-gray-500
+}

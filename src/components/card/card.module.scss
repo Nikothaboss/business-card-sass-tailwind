@@ -1,0 +1,18 @@
+@use "../../sass/partials/tailwind";
+@use "../../sass/partials/mixins";
+@use "../../sass/partials/variables";
+
+.card{
+    @include mixins.flex(flex-start, center, row);
+    box-shadow: variables.$box-shadow;
+    @apply w-100 m-auto bg-white
+}
+
+.card img{
+    @apply w-40
+}
+
+.contactInfo{
+    @include mixins.flex(center, center, column);
+    @apply pl-10
+}
